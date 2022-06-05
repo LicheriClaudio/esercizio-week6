@@ -1,0 +1,46 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../sass/variables'; 
+
+
+
+
+/* @function set-color($color) {
+    @if (lightness($color) > 40) {
+      @return #000;
+    }
+    @else {
+      @return #FFF;
+    }
+} */
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+}
+
+
+#first-cta {
+    background-image: url(../img/thumb-1920-716813.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white !important;
+    min-width: 28rem !important ;
+    min-height: 28rem !important ;
+}
+
+.bi-binoculars-fill {
+    font-size: 2rem;
+}
+
+.bi-person-plus-fill {
+    font-size: 2rem;
+}
+
+.bi-briefcase-fill {
+    font-size: 2rem;
+}
